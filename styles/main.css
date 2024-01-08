@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+
+/* class: mayor especificidad que tag. Normalmente usaremos clases para dar estilos.*/
+.blue-color {
+    color: blue;
+}
+
+/* id: mayor especificidad que class. No es la mejor práctica para forzar estilos,
+        aunque se puede usar para casos extremos. Sí para otras cosas.*/
+#green-color {
+    color: green;
+}
+
+#purple {
+    color: purple;
+}
