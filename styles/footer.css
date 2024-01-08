@@ -1,0 +1,18 @@
+.footer {
+    background-color: blue;
+    margin-top: 200px;
+    padding-top: 10px;
+    /* T - R - B - L*/
+    padding: 20px 10px 20px 10px;
+    /* Y - X */
+    padding: 20px 40px;
+    /* Todos los lados igual*/
+    padding: 10px 30%;
+
+    /*
+    rem / em
+    rem: unidad relativa al documento en sí. Equivale a 16 px.
+    em: unidad relativa al bloque?
+    */
+    font-size: 2 rem;
+}

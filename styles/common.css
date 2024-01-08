@@ -1,0 +1,18 @@
+/* Puedo definir variables para poder cambiar cosas
+con más eficiencia en el futuro*/
+
+:root {
+    --bg-color: #000;
+    --main-text-color: #fff;
+}
+
+.main-bg {
+    background-color: black;
+    background-color: rgb(0, 0, 0);
+    background-color: #000;
+    background-color: var(--bg-color);
+    color: white;
+    color: rgb(255, 255, 255);
+    color: #fff;
+    color: var(--main-text-color);
+}
