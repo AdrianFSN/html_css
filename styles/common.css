@@ -4,6 +4,7 @@ con más eficiencia en el futuro*/
 :root {
     --bg-color: #000;
     --main-text-color: #fff;
+    font-size: 16px;
 }
 
 .main-bg {
