@@ -42,22 +42,58 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
 
 </head>
 
 <body class="main-bg">
-    <div class="banner">
-        <div class="banner__image"></div>
-        <div class="banner__content">
-            <h1>Unlimited movies, TV shows, and more...</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <!--
+    <ol>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+    </ol>
+
+    <ul>
+        <li>
+            <a href="">All shows</a>
+            <ul>
+                <li>Show 1</li>
+                <li>Show 2</li>
+            </ul>
+        </li>
+        <li>Sign up</li>
+    </ul>
+    -->
+
+    <header class="header">
+        <div class="header__image">
+            <img src="assets/app/codeflix.png" alt="Codeflix">
         </div>
-    </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">
+                    <a class="btn" href="#"> All shows</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a class="btn" href="#"> Sing up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda iure perferendis reprehenderit voluptate
-        tenetur explicabo commodi nemo ab. Illo enim quis optio veniam, aliquid nobis dignissimos eaque animi non.</p>
+        <section class="banner">
+            <div class="banner__image"></div>
+            <div class="banner__content">
+                <h1>Unlimited movies, TV shows, and more...</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <!-- Block / inline block (entiendo que son bloques que funcionan dentro de otro bloque)-->
         <p>
@@ -65,9 +101,6 @@
         </p>
         <!-- em, strong, span, br -->
     </footer>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa autem suscipit numquam, ea facilis ipsam
-        debitis hic nam molestias eveniet, quis facere aperiam? Nulla optio voluptas non nesciunt doloribus
-        dignissimos.</p>
 </body>
 
 </html>

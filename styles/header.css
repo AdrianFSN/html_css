@@ -1,0 +1,42 @@
+.header {
+    /* position: fixed; El fixed es más útil para modales, carritos...*/
+    background-color: var(--bg-color);
+    z-index: 10;
+    /* width: 100vw; con sticky no me va a hacer falta marcar el width */
+    position: sticky;
+    top: 0;
+}
+
+.header .header__image {
+    width: 150px;
+}
+
+.header .header__image img {
+    width: 100%;
+}
+
+.header .header__nav .header__nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .header__nav .header__nav__list__item a {
+    text-decoration: none;
+}
+
+.btn {
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    padding: 0.8rem;
+    display: inline-block;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+
+}
+
+.hidden {
+    /* display: none; Deja de ocupar el espacio*/
+    /* visibility: hidden; Sigue ocupando el espacio */
+    display: none;
+}
