@@ -1,0 +1,28 @@
+.info {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.info .info__video {
+    position: relative;
+}
+
+.info img,
+.info video {
+    width: 100%;
+}
+
+.info .info__video video {
+    position: absolute;
+    top: 30px;
+    left: 95px;
+    width: 215px;
+}
+
+.info .info__video img {
+    z-index: 2;
+    position: relative;
+    max-width: 382px;
+    ;
+}
