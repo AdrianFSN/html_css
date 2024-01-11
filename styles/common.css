@@ -33,5 +33,11 @@ con más eficiencia en el futuro*/
     p {
         color: red;
     }
-
 }
+
+/* @media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff;
+        --main-text-color: black;
+    }
+} */
