@@ -5,6 +5,8 @@
     display: inline-block;
     /* border: 2px solid white; */
     border-radius: 5px;
+    border: none;
+    box-shadow: none;
 
 }
 
@@ -12,4 +14,23 @@
     /* display: none; Deja de ocupar el espacio*/
     /* visibility: hidden; Sigue ocupando el espacio */
     display: none;
+}
+
+.form__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.form__label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.form__input {
+    border-radius: 5px;
+    padding: 16px 12px;
+    border: none;
+    background-color: #333;
+    color: var(--main-text-color);
 }
