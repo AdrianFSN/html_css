@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            /* grid-template-columns: 200px 60% 20%; */
+            /* grid-template-columns: 200px 1fr 20%; */
+            grid-template-columns: 200px repeat(2, 1fr);
+            grid-template-rows: 80px 200px 500px 80px;
+            grid-template-areas:
+                "header header header"
+                "section section section"
+                "aside main ."
+                "footer footer footer";
+        }
+
+        @media (width > 768px) {
+            body {
+                grid-template-areas:
+                    "header header header"
+                    "section section section"
+                    "aside . ."
+                    "footer main .";
+            }
+
+        }
+
+        header {
+            background-color: orange;
+            grid-area: header;
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2; */
+        }
+
+        section {
+            background-color: blue;
+            grid-area: section;
+            /* grid-column: 1 / 4;
+            grid-row: 2 / 3; */
+        }
+
+        aside {
+            background-color: blueviolet;
+            grid-area: aside;
+            /* grid-column: 1 / 2;
+            grid-row: 3 / 4; */
+        }
+
+        main {
+            background-color: yellow;
+            grid-area: main;
+            /* grid-column: 2 / 3;
+            grid-row: 3 / 4; */
+        }
+
+        footer {
+            background-color: green;
+            grid-area: footer;
+            /* grid-column: 1 / 4;
+            grid-row: 4 / 5; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <section>section</section>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+
+</html>
