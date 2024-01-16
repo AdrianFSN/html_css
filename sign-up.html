@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/sign-up.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/8d02c6f9d4.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="main-bg bg-image">
 
     <div class="card">
         <h1>Sign up</h1>
+        <span class="material-symbols-outlined" translate="no">
+            menu
+        </span>
+        <i class="fa-brands fa-youtube"></i>
         <!-- form -->
         <form method="post" action="/register">
             <div class="form__element">
@@ -28,37 +35,37 @@
                 <input class="form__input" name="pwd" type="password" id="password" minlength="8"
                     placeholder="Contraseña" required>
             </div>
-            <div>
-                <label for="phone">Enter phone number</label>
-                <input type="tel" id="phone" name="phone" required patern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    title="Format: 111-123-4567">
+            <div class="form__element">
+                <label class="form__label" for="phone">Enter phone number</label>
+                <input class="form__input" type="tel" id="phone" name="phone" required
+                    patern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 111-123-4567">
             </div>
-            <div>
-                <label for="avatar">Choose your avatar</label>
+            <div class="form__element">
+                <label class="form__label" for="avatar">Choose your avatar</label>
                 <input type="file" id="avatar" name="avatar" accept="image/png" multiple>
             </div>
 
-            <fieldset><!--Para agrupar campos relacionados-->
+            <fieldset class="form__label"><!--Para agrupar campos relacionados-->
                 <legend>Fav category</legend>
 
-                <div>
+                <div class="form__element__radio__list">
                     <label for="drama">Drama</label>
                     <input type="radio" id="drama" name="favCategory" value="drama" checked>
                     <label for="docu">Documental</label>
                     <input type="radio" id="docu" name="favCategory" value="docu">
                 </div>
             </fieldset>
-            <div>
-                <label for="bio">User bio</label>
-                <textarea name="bio" id="" cols="30" rows="10">Default value</textarea>
+            <div class="form__element">
+                <label class="form__label" for="bio">User bio</label>
+                <textarea class="form__input" name="bio" id="" cols="30" rows="10">Default value</textarea>
             </div>
-            <div>
+            <div class="form__element form__element--checkbox">
                 <label for="newsletter">Subscribe to all news</label>
                 <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked>
             </div>
-            <div>
-                <label for="country">Country</label>
-                <select name="country" id="country">
+            <div class="form__element">
+                <label class="form__label" for="country">Country</label>
+                <select class="form__input" name="country" id="country">
                     <option value="es">Spain</option>
                     <option value="co">Colombia</option>
                 </select>
@@ -70,7 +77,8 @@
                 <!--<button type="button">Mostrar más campos</button>
                  Este se usa cuando tienes que añadir más campos tras pulsar el botón.
                 Para eso le tienes que meter el type button. Si no, será un submit (que recarga la página). -->
-                <input type="reset" class="btn" value="Reset fields"><!-- También hay un button de tipo reset-->
+                <input type="reset" class="btn btn--secondary"
+                    value="Reset fields"><!-- También hay un button de tipo reset-->
                 <input type="submit" class="btn" value="Enviar">
             </div>
 
