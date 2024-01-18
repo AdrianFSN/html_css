@@ -8,7 +8,17 @@
     border: none;
     box-shadow: none;
     cursor: pointer;
-    border: 1px solid var(--main-brand-color)
+    border: 1px solid var(--main-brand-color);
+    /* transition-property: background-color;
+    transition-duration: 10s;  Esto funciona, pero no es la forma habitual de escribirlo*/
+    transition: background-color 2s ease-in-out;
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        color: #000;
+        background-color: yellow;
+    }
 }
 
 .btn.btn--secondary {
